@@ -20,10 +20,8 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        cd AWS_Client_CAC_Avatar_2.0
         npm install
 
     - name: Build React App
       run: |
-        cd AWS_Client_CAC_Avatar_2.0
         npm run build 

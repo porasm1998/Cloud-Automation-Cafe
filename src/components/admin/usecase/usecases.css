@@ -1,0 +1,8 @@
+.p-sidebar-right.custom-sidebar{
+    width: 30rem;
+  }
+  .confirmation-content.center-align{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }

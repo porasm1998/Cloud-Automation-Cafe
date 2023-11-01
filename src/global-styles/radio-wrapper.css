@@ -1,0 +1,19 @@
+.p-radiobutton.p-component {
+    vertical-align: baseline;
+    justify-content: end;
+    align-items: inherit;
+}
+
+.p-radiobutton.p-component .p-radiobutton-box {
+    width: 15px;
+    height: 15px;
+}
+
+.p-radiobutton.p-component .p-radiobutton-box .p-radiobutton-icon {
+    width: 8px;
+    height: 8px;
+}
+
+.p-radiobutton.p-component ~ label {
+    font-size: 0.75rem;
+}

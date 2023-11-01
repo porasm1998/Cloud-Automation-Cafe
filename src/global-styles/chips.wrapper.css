@@ -1,0 +1,20 @@
+.p-chips.p-component .p-chips-multiple-container {
+    padding: 0.40rem 0.45rem;
+}
+
+.p-chips.p-component .p-chips-multiple-container .p-chips-input-token {
+    padding: 0px;
+}
+
+.p-chips.p-component .p-chips-multiple-container .p-chips-token {
+    padding: 0.1rem 0.75rem;
+    margin-top: 1px;
+}
+
+.p-chips.p-component .p-chips-multiple-container .p-chips-token-label {
+    font-size: 0.875rem;
+}
+
+.p-chips.p-component .p-chips-multiple-container .p-chips-token-icon {
+    font-size: 0.75rem;
+}

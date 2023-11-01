@@ -1,0 +1,11 @@
+.p-menu.p-component.p-menu-overlay .p-menuitem-link {
+    padding: 0.45rem;
+}
+
+.p-menu.p-component.p-menu-overlay .p-menuitem-link .p-menuitem-icon {
+    font-size: 0.75rem;
+}
+
+.p-menu.p-component.p-menu-overlay .p-menuitem-link .p-menuitem-text {
+    font-size: 0.85rem;
+}

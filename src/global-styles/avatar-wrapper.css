@@ -1,0 +1,8 @@
+.p-avatar.p-component.p-avatar-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.p-avatar.p-component.p-avatar-circle .p-avatar-icon {
+    font-size: 1rem;
+}

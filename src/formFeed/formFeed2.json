@@ -1,0 +1,58 @@
+{
+  "formElements": [
+  {
+    "label": "enter name",
+    "type": "TEXTFIELD",
+    "placeHolder": "eg. kk"
+  },
+  {
+     "label":"password",
+     "type":"PASSWORDFIELD"
+  },
+  {
+    "label": "enter address",
+    "type": "TEXTAREA",
+    "placeHolder": "eg. no.34 opposite street"
+  },
+  {
+    "label": "enter phone number",
+    "type": "NUMBERFIELD",
+    "placeHolder": "eg. 9329843494"
+  },
+  {
+    "label": "enter email",
+    "type": "EMAILFIELD",
+    "placeHolder": "eg. kk@gmail.com"
+  },
+  {
+    "label": "select gender",
+    "type": "DROPDOWN",
+    "values": ["male","female","not willing to disclose"]
+  },
+  {
+    "label": "select organization",
+    "type": "DROPDOWN",
+    "values": ["Infosys"]
+  },
+  {
+    "label": "select the city",
+    "type": "DROPDOWN",
+    "fetchFromApi":"https://jsonplaceholder.typicode.com/users",
+    "values": []
+  },
+  {
+    "label":"select DOB",
+    "type":"DATEFIELD"
+  },
+  {
+    "label":"select the languages that you know",
+    "type":"CHECKBOX",
+    "values":["tamil","english","malayalam","konkani"]
+  }
+
+],
+"image":{
+  "imageUrl":"https://bobbyhadz.com/images/blog/react-prevent-multiple-button-clicks/thumbnail.webp",
+  "alt":"image"
+}
+}

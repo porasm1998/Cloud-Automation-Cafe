@@ -1,0 +1,243 @@
+import React from "react";
+import axios from "axios";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import { Grid } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import { toast } from "react-toastify";
+import { useState } from "react";
+import Api from "../../settings.json";
+import { FileUpload } from 'primereact/fileupload';
+export default function AddModule() {
+  const [files, setFiles] = React.useState([]);
+  const [UseCase, setUseCase] = useState();
+  const [folder, setFolder] = React.useState([]);
+  const onInputChange = (e) => {
+    setFiles(e.target.files);
+  };
+  const onInputChangeFolder = (e) => {
+    setFolder(e.target.files);
+    console.log("Folder clicked");
+  };
+  //const foldericon=(<FolderIcon/>)
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    const data = new FormData();
+
+    for (let i = 0; i < files.length; i++) {
+      data.append("file", files[i]);
+    }
+    const dataFolder = new FormData();
+    const moduledetails = {
+      cloudId: 1,
+      code: "UseCase",
+      name: "UseCase",
+      UIRoute: "/addModule",
+      JSON_File_Path: `./api/public/JsonFile/${UseCase}`,
+      TF_File_Path: `./api/public/TF_Files/${UseCase}`,
+    };
+    for (let i = 0; i < folder.length; i++) {
+      console.log(folder[i]);
+      dataFolder.append(folder[i].name, folder[i], );
+    }
+
+    axios
+      .post(`${Api.ip}client/upload`, data)
+      .then((data) => {
+        toast.success("Upload Success");
+        console.log("printing data ----",data)
+      })
+      .catch((_) => {
+        toast.error("Upload Error");
+      });
+
+    // axios
+    //   .post(`${Api.ip}client/upload/folder`, dataFolder)
+    //   .then((dataFolder) => {
+    //     toast.success("Upload Success");
+    //     console.log("printing data folder ----",dataFolder)
+    //   })
+    //   .catch((_) => {
+    //     toast.error("Upload Error");
+    //   });
+
+    // axios.post('//localhost:3001/upload', {body:data,mode: 'no-cors'})
+    //     .then((response) => {
+    //         toast.success('Upload Success');
+    //         // onSuccess(response.data)
+    //     })
+    //     .catch((e) => {
+    //         toast.error('Upload Error')
+    //     })
+    //   //  dataFolder.append({"foldername":"testfolder"})
+    //     axios.post('//localhost:3001/upload/folder', {body:dataFolder,mode: 'no-cors'})
+    //     .then((response) => {
+    //         toast.success('Upload Success');
+    //         // onSuccess(response.data)
+    //     })
+    //     .catch((e) => {
+    //         toast.error('Upload Error')
+    //     })
+
+    
+  };
+
+  return (
+    <div className="App">
+      <Grid
+        container
+        justifyContent="center"
+        marginTop="70px"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          padding: "40px 20px",
+        }}
+      >
+        <Grid
+          item
+          xs={6}
+          sx={{
+            borderRadius: "20px",
+            border: "3px solid #3F51B5",
+            boxShadow:
+              "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            padding: "40px 10px",
+          }}
+        >
+          <Box
+            component="form"
+            id="dynamicForm"
+            autoComplete="off"
+            onSubmit={onSubmit}
+          >
+            <Grid
+              item
+              sx={{
+                margin: "0px auto 25px auto",
+                display: "flex",
+                justifyContent: "center",
+              }}
+              xs={12}
+            >
+              <Typography variant="h5" component="h5">
+                Add Usecase
+              </Typography>
+            </Grid>
+            <div item sx={{ margin: "25px auto 10px auto" }} xs={10}>
+              <label htmlFor="UseCase" padding="10px 100px 10px 10px">
+                Use Case:
+              </label>{" "}
+              &emsp; &emsp;&emsp;&emsp;&nbsp;
+              <TextField
+                width="60%"
+                type="text"
+                name="usecase"
+                placeholder="Enter your use case"
+                // value={UseCase}
+                onChange={setUseCase}
+                variant="outlined"
+              />
+            </div>
+            <br></br>
+
+            {/* <Grid item sx={{margin:"25px auto 10px auto"}} xs={10}>
+          Use Case:{''}
+         <TextField   variant="outlined" fullWidth label="UseCase Name" onChange={setUseCase} placeholder={"Enter Usecase Name"}/>
+                  </Grid> */}
+
+            <div item sx={{ margin: "25px auto 10px auto" }} xs={10}>
+              <label htmlFor="files" padding="10px 100px 10px 10px">
+                JSON File:
+              </label>{" "}
+              &emsp; &emsp; &emsp;&emsp;
+              {/* <div className="input" > */}
+              <TextField
+                //endAdornment={  <InputAdornment position="end"><IconButton> <FolderIcon /></IconButton></InputAdornment>}
+                type="file"
+                // endIcon={foldericon}
+                id="files"
+                name="files"
+                placeholder="upload JSON file"
+                // value={UseCase}
+                onChange={onInputChange}
+                variant="outlined"
+                
+              />
+              {/* </div> */}
+            </div>
+            <br></br>
+
+            {/* <Grid item sx={{margin:"15px auto 10px auto"}} xs={10}>
+         <TextField  variant="outlined" type="file" id="files" fullWidth placeholder={"Upload JSON File"} onChange={onInputChange} multiple/>
+                  </Grid> */}
+            {/* <div>
+      <FolderIcon onClick={onInputChangeFolder} />
+      <span>Folder</span>
+    </div> */}
+
+            <div item sx={{ margin: "25px auto 10px auto" }} xs={10}>
+              <label htmlFor="folder" padding="10px 100px 10px 10px">
+                Terraform Folder:
+              </label>{" "}
+              &emsp;
+              <Button variant="contained" width="55%">
+                <input
+                  type="file"
+                  id="files"
+                  name="folder"
+                  placeholder="upload Terraform Folder"
+                  // value={UseCase}
+                  onChange={onInputChangeFolder}
+                  multiple
+                  directory=""
+                  webkitdirectory=""
+                  moxdirectory=""
+                />
+              </Button>
+            </div>
+
+            {/* <Grid item sx={{margin:"15px auto 10px auto"}} xs={10}>
+                  <Button
+  variant="contained"
+>
+  Select TF Folder to Upload: 
+  <input type="file"  id="files" multiple directory="" webkitdirectory="" moxdirectory=""  onChange={onInputChangeFolder} />
+                  </Button>
+                  </Grid> */}
+
+            <Grid item sx={{ margin: "10px auto", display: "flex" }} xs={10}>
+              <Button
+                sx={{
+                  margin: "25px auto 0 auto",
+                  boxShadow:
+                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                }}
+                variant="contained"
+                label="Submit"
+                type="submit"
+              >
+                Submit
+              </Button>
+            </Grid>
+          </Box>
+        </Grid>
+      </Grid>
+
+      {/* <form onSubmit={submitForm} style={{width:'45%'}}>
+          <input
+            width="100%"
+            type="text"
+            onChange={(e) => setSuperHero(e.target.value)}
+            placeholder={"Superhero Name"}
+          />
+          <br />
+          <input type="file" width="100%"  onChange={(e) => setUploadFile(e.target.files)} />
+          <br />
+          <input  type="submit" width="100%" />
+        </form> */}
+    </div>
+  );
+}

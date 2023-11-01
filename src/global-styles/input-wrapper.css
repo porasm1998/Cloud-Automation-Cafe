@@ -1,0 +1,12 @@
+.cac-form .p-inputtext.p-component {
+    padding: 0.45rem;
+}
+
+.cac-form .p-field {
+    margin-bottom: 0.35rem;
+}
+
+.cac-form .p-field > label {
+    margin-bottom: 0.25rem;
+    font-size: 14px;
+}

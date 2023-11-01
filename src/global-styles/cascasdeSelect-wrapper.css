@@ -1,0 +1,10 @@
+.p-cascadeselect.p-component .p-cascadeselect-label {
+    padding: 6px 12px;
+}
+
+.p-cascadeselect.p-component .p-cascadeselect-trigger-icon  {
+    font-size: 0.85rem;
+}
+.p-cascadeselect-panel.p-component .p-cascadeselect-items .p-cascadeselect-item .p-cascadeselect-item-content{
+  padding: 6px 12px;
+}

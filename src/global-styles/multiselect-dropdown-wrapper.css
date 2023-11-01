@@ -1,0 +1,32 @@
+.p-dropdown-panel .p-dropdown-items-wrapper .p-dropdown-items>.p-dropdown-item {
+    font-size: 0.75rem;
+}
+
+.p-multiselect.p-component .p-multiselect-label-container .p-multiselect-label {
+    padding: 0.35rem;
+}
+
+.p-multiselect.p-component .p-multiselect-trigger-icon {
+    font-size: 0.85rem;
+}
+
+.p-multiselect.p-component .p-multiselect-clear-icon {
+    font-size: 0.75rem;
+}
+
+.p-multiselect.p-multiselect-chip.p-component .p-multiselect-token {
+    padding: 0 0.4rem;
+}
+
+
+.p-multiselect-panel.p-component .p-multiselect-filter-container .p-multiselect-filter {
+    padding: 0.2rem;
+}
+
+.p-multiselect-panel.p-component .p-multiselect-items>.p-multiselect-item {
+    padding: 0.4rem;
+}
+
+.p-multiselect-panel.p-component .p-multiselect-close-icon {
+    font-size: 0.75rem;
+}

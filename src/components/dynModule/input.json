@@ -1,0 +1,135 @@
+{
+    "fields": [
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "AWS Details",
+            "uniqueKey": "uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"dropDownOptions[STANDARD_CONTROL_CATEGORIES.REGION] || []",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Bucket Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "bucketname",
+                    "label": "Bucket Name",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "keyname",
+                    "label": "Key Name",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "filename",
+                    "label": "File Name",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()"
+
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Lambda Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "lambdaname",
+                    "label": "Lambda Name",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "six-column",
+            "label": "IAM Role Details",
+            "uniqueKey": "uuidv4()",
+            "fields": [
+                {
+                    "name": "createiam",
+                    "label": "Create IAM Role",
+                    "component": "ToggleButton",
+                    "onLabel": "No",
+                    "offLabel": "Yes",
+                    "onIcon": "pi pi-times",
+                    "offIcon": "pi pi-check",
+                    "uniqueKey": "uuidv4()"
+                }]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+
+            "uniqueKey": "uuidv4()",
+            "fields": [
+
+                {
+                    "name": "iamrolename",
+                    "label": "IAM Role Name",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey": "uuidv4()"
+
+                },
+                {
+                    "name": "iamrolearn",
+                    "label": "IAM Role ARN",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey": "uuidv4()"
+
+                }
+            ]
+        }
+
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+}

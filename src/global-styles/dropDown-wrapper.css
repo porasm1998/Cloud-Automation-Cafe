@@ -1,0 +1,19 @@
+.p-dropdown.p-component .p-dropdown-label {
+    padding: 0.375rem 0.75rem;
+}
+
+.p-dropdown.p-component .p-dropdown-trigger-icon {
+    font-size: 0.85rem;
+}
+
+.p-dropdown.p-component .p-dropdown-clear-icon {
+    font-size: 0.75rem;
+}
+
+.p-dropdown-panel.p-component .p-dropdown-items>.p-dropdown-item {
+    padding: 0.4rem;
+}
+
+.p-dropdown-panel.p-component .p-dropdown-filter-container>.p-dropdown-filter {
+    padding: 0.2rem;
+}

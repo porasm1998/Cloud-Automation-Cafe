@@ -1,0 +1,20 @@
+.p-button.p-component {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.8rem;
+}
+
+.p-button.p-component .p-button-icon {
+    font-size: 0.75rem;
+}
+
+.p-button.p-component.p-button-icon-only {
+    width: 1.357rem;
+}
+
+.p-button.p-component.p-datepicker-trigger.p-button-icon-only {
+    padding: 0px;
+}
+
+.p-button.p-component.p-button-icon-only.p-button-rounded {
+    height: 1.357rem;
+}

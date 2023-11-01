@@ -1,0 +1,19 @@
+.p-tree.p-component .p-tree-filter-container .p-tree-filter {
+    padding: 0.375rem 0.75rem;
+}
+
+.p-tree.p-component .p-tree-container .p-treenode .p-treenode-content .p-tree-toggler {
+    height: 1rem;
+}
+
+.p-tree.p-component .p-tree-container .p-treenode .p-treenode-content .p-tree-toggler .pi-fw {
+    font-size: 0.75rem;
+}
+
+.p-tree.p-component .p-tree-container .p-treenode .p-treenode-content .p-treenode-label {
+    font-size: 0.75rem;
+}
+
+.p-tree.p-component .p-checkbox .p-checkbox-box.p-highlight .p-checkbox-icon.pi-check:before {
+    top: 0.5rem;
+}

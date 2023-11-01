@@ -1,0 +1,16 @@
+.p-sidebar-right.custom-sidebar{
+    width: 30rem;
+    z-index: -1;
+  }
+  .p-sidebar-right.custom-sidebar1{
+    width: 50rem;
+
+  }
+  .confirmation-content.center-align{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .p-datatable .action-fields {
+    width: 3.438rem;
+  }

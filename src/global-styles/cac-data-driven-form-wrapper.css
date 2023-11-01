@@ -1,0 +1,31 @@
+.cac-data-driven-form {
+    clear: both;
+}
+
+.cac-data-driven-form .section-title {
+    font-size: 0.85rem;
+}
+
+.cac-data-driven-form .p-error.p-d-block {
+    font-size: 0.6875rem;
+}
+
+.cac-data-driven-form~.cac-data-driven-footer {
+    margin-top: 0.625rem;
+}
+
+.cac-data-driven-footer .p-button:not(:first-child) {
+    margin-left: 0.85rem;
+}
+
+.cac-data-driven-form-array .cac-from-array-button {
+    float: right;
+}
+
+.cac-data-driven-form-array .form-array-heading {
+    display: inline-block;
+}
+
+.cac-data-driven-form .p-field .p-inputtext.p-component{
+    padding: 0.4rem;
+}

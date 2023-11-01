@@ -1,0 +1,37 @@
+{
+    "formElements": [
+    {
+      "label": "Network Name",
+      "type": "TEXTFIELD",
+      "placeHolder": "eg. kk"
+    },
+    {
+        "label": "Routing Mode",
+        "type": "DROPDOWN",
+        "values": ["GLOBAL","REGIONAL"]
+      },
+    {
+      "label": "Subnet Name",
+      "type": "TEXTFIELD",
+      "placeHolder": "eg. Subnet1"
+    },
+    {
+      "label": "Subnet IP",
+      "type": "TEXTFIELD",
+      "placeHolder": "eg.10.0.0.0/24"
+    },
+    {
+      "label": "Subnet Region",
+      "type": "DROPDOWN",
+      "values": ["asia-east1","us-west1"]
+    }
+   
+
+    
+  
+  ],
+  "image":{
+    
+    "alt":"image"
+  }
+  }

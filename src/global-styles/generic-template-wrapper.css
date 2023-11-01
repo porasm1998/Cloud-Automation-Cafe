@@ -1,0 +1,33 @@
+div[class*="cac-container"] {
+    margin-top: 3.5rem
+}
+
+.cac-title-image {
+    height: 3rem
+}
+
+.cac-header-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cac-header-title h4 {
+    margin-left: 9.1875rem;
+}
+
+.cac-form-container {
+    margin-top: 0.625rem;
+}
+
+.cac-header-container {
+    padding: 0.625rem;
+    border-bottom: 1px solid rgb(218 198 198);
+}
+
+.p-card.cac-card {
+    padding: 0.625rem;
+    margin: auto;
+     width: 70%; 
+     box-shadow: rgb(0 0 0 / 20%) 0px 8px 12px 0px; 
+     border: 1px solid rgba(0,0,0,.125);     
+}

@@ -20,11 +20,12 @@ jobs:
 
     - name: Install Dependencies
       run: |
+        npm install -g npm@latest
+
         npm install
 
     - name: Build React App
       run: |
-        npm install --save-dev @babel/plugin-proposal-private-property-in-object
-        npm install -g npm@latest
+        
 
         npm run build 

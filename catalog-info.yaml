@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: aws-cac-test
   annotations:
-    github.com/project-slug: porasm1998/aws-cac-test
+    jenkins.io/job-full-name: cac-application/aws-cac-test
 spec:
   type: other
   lifecycle: unknown

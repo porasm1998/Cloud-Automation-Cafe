@@ -3,9 +3,9 @@ kind: Component
 metadata:
   name: aws-cac-test
   links:
-    - url: http://13.51.108.185:3000/login
-      title: Cloud Automation Cafe URL
-      icon: dashboard
+    -url: http://13.51.108.185:3000/login
+     title: Cloud Automation Cafe URL
+     icon: dashboard
   annotations:
     jenkins.io/job-full-name: cac-application/aws-cac-test
 spec:

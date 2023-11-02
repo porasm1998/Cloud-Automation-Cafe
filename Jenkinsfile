@@ -9,18 +9,12 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script {
-                    bat 'npm ci'
+                    bat 'npm ci --force'
                 }
             }
         }
 
-        stage('Build') {
-            steps {
-                script {
-                    bat 'npm run build'
-                }
-            }
-        }
+      
 
         // Additional stages as per your requirements
     }

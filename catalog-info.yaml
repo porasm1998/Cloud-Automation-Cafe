@@ -5,7 +5,7 @@ metadata:
   description: |
     A Cloud-agnostic solution that address automation of the entire Cloud spectrum 
   annotations:
-    jenkins.io/job-full-name: Application-Login-jenkins/Cloud-Automation-Cafe
+    jenkins.io/job-full-name: cac-application/Cloud-Automation-Cafe
 spec:
   type: other
   lifecycle: unknown

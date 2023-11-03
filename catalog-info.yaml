@@ -4,10 +4,6 @@ metadata:
   name: Cloud-Automation-Cafe
   description: |
     A Cloud-agnostic solution that address automation of the entire Cloud spectrum 
-  links:
-    - url: http://13.53.145.209:3000/login
-      title: Cloud Automation Cafe
-      icon: website
   annotations:
     jenkins.io/job-full-name: cac-application/aws-cac-test
 spec:

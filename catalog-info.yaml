@@ -5,7 +5,7 @@ metadata:
   description: |
     A Cloud-agnostic solution that address automation of the entire Cloud spectrum 
   links:
-    - url: http://13.51.108.185:3000/login
+    - url: http://13.53.145.209:3000/login
       title: Cloud Automation Cafe
       icon: website
   annotations:

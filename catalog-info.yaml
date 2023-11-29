@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: Cloud-Automation-Cafe
   links:
-    - url: http://13.48.45.188:3000/login
+    - url: http://51.21.10.223:3000/login
       title: Cloud Automation Cafe - Website
       icon: website
   description: |

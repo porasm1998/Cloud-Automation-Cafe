@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Cloud-Automation-Cafe
+  annotations:
+    github.com/project-slug: porasm1998/Cloud-Automation-Cafe
+spec:
+  type: other
+  lifecycle: unknown
+  owner: backstage

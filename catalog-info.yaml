@@ -1,9 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Cloud-Automation-Solution
+  name: Cloud Automation Solution
+  links:
+    - url: http://51.21.10.223
+      title: Cloud Automation Solution - Website
+      icon: website
+  description: |
+    A Cloud-agnostic solution that address automation of the entire Cloud spectrum 
+    
   annotations:
-    github.com/project-slug: porasm1998/Cloud-Automation-Cafe
+    jenkins.io/job-full-name: cac-application/Cloud-Automation-Cafe
 spec:
   type: other
   lifecycle: unknown
